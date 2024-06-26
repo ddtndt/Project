@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <title>Assignment03</title>
+  </head>
+  <body>
+    <section class="container my-4">
+      <div class="position-relative">
+        <div
+          class="position-absolute text-center text-white top-50 start-50 translate-middle"
+        >
+          <div class="fs-1">Tạ Như Tuệ Minh</div>
+          <div class="fs-4">Full Stack Developer</div>
+        </div>
+        <img class="img-fluid" src="images/banner.jpg" alt="" />
+      </div>
+      <!-- Navbar -->
+      <div
+        class="navbar nav navbar-expand-lg p-0 d-md-flex d-block justify-content-center"
+      >
+        <div class="item d-flex text-center p-3">
+          <div class="icon-user text-primary"></div>
+          <a class="text-dark" href="#">Thông tin</a>
+        </div>
+        <div class="item d-flex text-center p-3">
+          <div class="icon-doc-text-inv text-primary"></div>
+          <a class="text-dark" href="#"> Lý lịch</a>
+        </div>
+
+        <div class="item d-flex text-center p-3">
+          <div class="icon-mail-alt text-primary"></div>
+          <a class="text-dark" href="#">Chứng chỉ</a>
+        </div>
+        <div class="item d-flex text-center p-3">
+          <div class="icon-star-1 text-primary"></div>
+          <a class="text-dark" href="#">Dự án</a>
+        </div>
+      </div>
+
+      <!-- Thong tin -->
+
+      <div class="row justify-content-center bg-light p-4">
+        <div class="col-md m-3">
+          <div class="fs-2 fw-bold my-4">Mục Tiêu Nghề Nghiệp</div>
+          <div class="lh-md">
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </div>
+        </div>
+
+        <div class="col-md border-start bg-light m-3">
+          <div class="fs-2 fw-bold my-4">Thông tin cá nhân</div>
+          <div id="info">
+            <div class="px-3">
+              <ul>
+                <li>Giới tính : Nam</li>
+                <li>Ngày sinh : 17/08/2008</li>
+                <li>Điện thoại : (+84) 989671761</li>
+                <li>Email : minhfx29216@funix.edu.vn</li>
+                <li>Địa chỉ : Số 10, đường 10, Hà Nội</li>
+                <li>Website : https://abc.tech</li>
+              </ul>
+
+              <div class="d-flex">
+                <div class="icon-twitter text-primary mx-1"></div>
+                <div class="icon-facebook text-primary mx-1"></div>
+                <div class="text-primary mx-1 icon-gplus"></div>
+                <div class="text-primary mx-1 icon-linkedin-circled"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden mt-4 lh-lg" id="formUser">
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Email"
+                class="form-control"
+                id="email"
+              />
+              <p class="error-email">Hãy nhập email để xác thực</p>
+            </div>
+            <div>
+              <div class="btn btn-submit btn-primary" type="submit">Submit</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="row m-4">
+        <div class="col-md border p-4 lh-md m-3">
+          <div class="job-item" onclick="view_click(this)">
+            <div class="d-flex justify-content-between my-4">
+              <div class="fs-1 fw-bold">Kinh nghiệm</div>
+              <div class="fs-1 ic-toolbox p-2"></div>
+            </div>
+            <div class="job-content">
+              <div class="text-secondary my-4">
+                <div class="text-dark fs-4 fw-bold my-3">Công ty Y</div>
+                <div class="my-2">
+                  <div>05/2022-<span>Hiện tại</span></div>
+                </div>
+                <div>
+                  <ul>
+                    <li>Fullstack Developer</li>
+                    <li>
+                      Xây dựng phát triển Website dựa trên thiết kế đã có .
+                    </li>
+                    <li>
+                      Phân tích và thiết kế Database, sử dụng các hệ quản trị
+                      CDSL.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-secondary my-4">
+                <div class="my-3 fw-bold text-dark fs-4">Công ty X</div>
+                <div class="my-2"><i>06/2021-04/2022</i></div>
+                <div>
+                  <div>Wed Designer</div>
+                  <ul>
+                    <li>Thiết kế Wedsite dựa trên yêu cầu của khách hàng.</li>
+                    <li>Sử dụng các công cụ: Figma,Canva,PTS.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="view-button my-3">
+              <button class="btn btn-warning" type="button">
+                <svg
+                  fill="#000000"
+                  height="16"
+                  width="16"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 386.257 386.257"
+                  xml:space="preserve"
+                >
+                  <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
+                </svg>
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-2 -->
+        <div class="col-md border p-4 lh-md m-3">
+          <div class="job-item" onclick="view_click(this)">
+            <div class="d-flex justify-content-between my-4">
+              <div class="fs-1 fw-bold">Học vấn</div>
+              <div class="fs-1 ic-toolbox p-2"></div>
+            </div>
+            <div class="job-content">
+              <div class="text-secondary my-4">
+                <div class="text-dark fs-4 fw-bold my-3">Funix</div>
+                <div class="my-2">
+                  <div>06/2021 - 05/2022</div>
+                </div>
+                <div>
+                  <ul>
+                    <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack.</li>
+                    <li>GPA: 9/10.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="text-secondary my-4">
+                <div class="my-3 fw-bold text-dark fs-4">Công ty X</div>
+                <div class="my-2">08/2016 - 07/2019</div>
+                <div>
+                  <div>Wed Designer</div>
+                  <ul>
+                    <li>Chuyên ngành: Kĩ thuật phần mềm.</li>
+                    <li>GPA: 3.2 / 4</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="text-secondary my-4">
+                <div class="my-3 fw-bold text-dark fs-4">Đại học Hà Nội</div>
+                <div class="my-2">08/2016 - 02/2018</div>
+                <div>
+                  <ul>
+                    <li>Hệ từ xa, Chuyên ngành: Ngôn ngữ Nhật</li>
+                    <li>GPA: 2.8 / 4</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="view-button my-3">
+              <button class="btn btn-warning" type="button">
+                <svg
+                  fill="#000000"
+                  height="16"
+                  width="16"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 386.257 386.257"
+                  xml:space="preserve"
+                >
+                  <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
+                </svg>
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-3 -->
+        <div class="col-md border p-4 lh-md m-3">
+          <div class="job-item" onclick="view_click(this)">
+            <div class="d-flex justify-content-between my-4">
+              <div class="fs-1 fw-bold">Hoạt động</div>
+              <div class="fs-1 ic-toolbox p-2"></div>
+            </div>
+            <div class="job-content">
+              <div class="text-secondary my-4">
+                <div class="text-dark fs-4 fw-bold my-3">
+                  FPT Edu Hackathon 2019
+                </div>
+                <div class="my-2">
+                  <div>03/20219 - 05/2019</div>
+                </div>
+                <div>
+                  <ul>
+                    <li>Giải 3 bảng A</li>
+                    <li>Đề tài: Trang wed về phân loại rác thải.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="text-secondary my-4">
+                <div class="my-3 fw-bold text-dark fs-4">Câu lạc bộ Z</div>
+                <div class="my-2">08/2018 - 0/2019</div>
+                <div>
+                  <ul>
+                    <li>Trưởng ban chuyên môn.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="text-secondary my-4">
+                <div class="my-3 fw-bold text-dark fs-4">Câu lạc bộ Z</div>
+                <div class="my-2">08/2016</div>
+                <div>
+                  <ul>
+                    <li>Hỗ trợ tổ chức tuần lễ văn hóa Việt Nam - Nhật Bản.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="view-button my-3">
+              <button class="btn btn-warning" type="button">
+                <svg
+                  fill="#000000"
+                  height="16"
+                  width="16"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 386.257 386.257"
+                  xml:space="preserve"
+                >
+                  <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
+                </svg>
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block w-100"></div>
+
+        <!-- col-4 -->
+        <div class="col-md border p-4 lh-md m-3">
+          <div class="job-item" onclick="view_click(this)">
+            <div class="d-flex justify-content-between my-4">
+              <div class="fs-1 fw-bold">Sở thích</div>
+              <div class="fs-1 ic-toolbox p-2"></div>
+            </div>
+            <div class="job-content">
+              <div class="d-md-flex">
+                <div class="mx-3 text-center job-icon">
+                  <div>
+                    <span><i class="fs-4 circle py-2 ic-megaphone"></i></span>
+                  </div>
+                  <div>Âm nhạc</div>
+                </div>
+
+                <div class="mx-3 text-center job-icon">
+                  <div>
+                    <span
+                      ><i class="fs-4 circle py-2 ic-hotairballoon"></i
+                    ></span>
+                  </div>
+                  <div>Du lịch</div>
+                </div>
+
+                <div class="mx-3 text-center job-icon">
+                  <div>
+                    <span><i class="fs-4 circle py-2 ic-strategy"></i></span>
+                  </div>
+                  <div>Chơi game</div>
+                </div>
+
+                <div class="mx-3 text-center job-icon">
+                  <div>
+                    <span><i class="fs-4 circle py-2 ic-basket"></i></span>
+                  </div>
+                  <div>Nấu ăn</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="view-button my-3">
+              <button class="btn btn-warning" type="button">
+                <svg
+                  fill="#000000"
+                  height="16"
+                  width="16"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 386.257 386.257"
+                  xml:space="preserve"
+                >
+                  <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
+                </svg>
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-5 -->
+        <div class="col-md border p-4 lh-md m-3">
+          <div class="job-item" onclick="view_click(this)">
+            <div class="d-flex justify-content-between my-4">
+              <div class="fs-1 fw-bold">Ngôn ngữ</div>
+              <div class="fs-1 ic-toolbox p-2"></div>
+            </div>
+            <div class="job-content">
+              <div class="my-2">
+                <div>HTML/CSS: Fundamental</div>
+                <div class="d-flex">
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-secondary"></span>
+                  <span class="my-3 job-point text-secondary"></span>
+                </div>
+              </div>
+              <div class="my-2">
+                <div>Javascript: Intermediate</div>
+                <div class="d-flex">
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-secondary"></span>
+                </div>
+              </div>
+              <div class="my-2">
+                <div>NodeJS: Intermediate</div>
+                <div class="d-flex">
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-secondary"></span>
+                </div>
+              </div>
+              <div class="my-2">
+                <div>bootstrap5: Fundamental</div>
+                <div class="d-flex">
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-secondary"></span>
+                  <span class="my-3 job-point text-secondary"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="view-button my-3">
+              <button class="btn btn-warning" type="button">
+                <svg
+                  fill="#000000"
+                  height="16"
+                  width="16"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 386.257 386.257"
+                  xml:space="preserve"
+                >
+                  <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
+                </svg>
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-6 -->
+        <div class="col-md border p-4 lh-md m-3">
+          <div class="job-item" onclick="view_click(this)">
+            <div class="d-flex justify-content-between my-4">
+              <div class="fs-1 fw-bold">Kĩ năng</div>
+              <div class="fs-1 ic-toolbox p-2"></div>
+            </div>
+            <div class="job-content">
+              <div class="my-2 text-secondary">
+                <div>English-IELTS 7.0</div>
+                <div class="d-flex">
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-secondary"></span>
+                </div>
+              </div>
+              <div class="my-2 text-secondary">
+                <div>Japanese-N3</div>
+                <div class="d-flex">
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-primary"></span>
+                  <span class="my-3 job-point text-primary"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="view-button my-3">
+              <button class="btn btn-warning" type="button">
+                <svg
+                  fill="#000000"
+                  height="16"
+                  width="16"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 386.257 386.257"
+                  xml:space="preserve"
+                >
+                  <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
+                </svg>
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certi -->
+      <div class="bg-light p-3">
+        <div class="fs-2 text-dark fw-bold">Chứng chỉ -Giải thưởng</div>
+        <div class="d-lg-flex justify-content-start border-bottom">
+          <div class="d-md-flex m-2">
+            <img
+              class="img-fluid m-3"
+              src="images/Cert_WEB.png"
+              alt=""
+              width="350"
+              height="auto"
+            />
+            <div class="m-2 fs-6">
+              <div>CHỨNG CHỈ LẬP TRÌNH WED - FUNIX</div>
+              <div class="mt-4">
+                <ul>
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.6</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-md-flex m-2">
+            <img
+              class="img-fluid m-3 border-start px-3"
+              src="images/Cert_PRF.png"
+              alt=""
+              width="350"
+              height="auto"
+            />
+            <div class="m-2 fs-6">
+              <div>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</div>
+              <div class="mt-4">
+                <ul>
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.9</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-flex m-2">
+          <img
+            class="img-fluid m-3"
+            src="images/Cert_DBI.png"
+            alt=""
+            width="350"
+            height="auto"
+          />
+          <div class="m-2 fs-6">
+            <div>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</div>
+            <div class="mt-4">
+              <ul>
+                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                <li>GPA: 8.0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project -->
+      <div class="p-3">
+        <div class="fs-2 text-dark fw-bold">Dự án</div>
+        <div class="row my-4 text-secondary">
+          <div class="col-md m-3">
+            <a class="Link text-dark" href="goals.html">
+              <img
+                class="img-fluid"
+                width="400"
+                height="auto"
+                src="images/project_1.png"
+                alt=""
+              />
+              <div class="border grid">
+                <div
+                  class="fs-5 m-2 text-dark border-bottom py-2 text-uppercase"
+                >
+                  CV Cá nhân
+                </div>
+
+                <div class="d-inline-flex">
+                  <div
+                    class="border rounded-pill m-2 px-2 bg-primary text-white"
+                  >
+                    2021
+                  </div>
+                  <div class="d-flex m-2">
+                    <div class="icon-user-1"></div>
+                    FUNIX
+                  </div>
+                  <div class="d-flex m-2">
+                    <div class="icon-lamp"></div>
+                    Developer
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Mô tả</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Nhiệm vụ</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Công nghệ</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md m-3">
+            <a href="goals.html" class="Link text-dark">
+              <img
+                class="img-fluid"
+                width="400"
+                height="auto"
+                src="images/project_2.png"
+                alt=""
+              />
+              <div class="border grid">
+                <div
+                  class="fs-5 m-2 text-dark border-bottom py-2 text-uppercase"
+                >
+                  trang wed quản lí thú cưng
+                </div>
+
+                <div class="d-inline-flex">
+                  <div
+                    class="border rounded-pill m-2 px-2 bg-primary text-white"
+                  >
+                    2021
+                  </div>
+                  <div class="d-flex m-2">
+                    <div class="icon-user-1"></div>
+                    FUNIX
+                  </div>
+                  <div class="d-flex m-2">
+                    <div class="icon-lamp"></div>
+                    Developer
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Mô tả</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Nhiệm vụ</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Công nghệ</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md m-3">
+            <a href="goals.html" class="Link text-dark">
+              <img
+                class="img-fluid"
+                width="400"
+                height="auto"
+                src="images/project_3.png"
+                alt=""
+              />
+              <div class="border grid">
+                <div
+                  class="fs-5 m-2 text-dark border-bottom py-2 text-uppercase"
+                >
+                  trang wed xem tin tức
+                </div>
+
+                <div class="d-inline-flex">
+                  <div
+                    class="border rounded-pill m-2 px-2 bg-primary text-white"
+                  >
+                    2021
+                  </div>
+                  <div class="d-flex m-2">
+                    <div class="icon-user-1"></div>
+                    FUNIX
+                  </div>
+                  <div class="d-flex m-2">
+                    <div class="icon-lamp"></div>
+                    Developer
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Mô tả</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Nhiệm vụ</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+
+                <div class="d-inline-flex border-top m-2">
+                  <div class="my-2 w-100">Công nghệ</div>
+                  <div class="my-2">
+                    Trang Wed CV cá nhân online.Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-light py-2 d-flex justify-content-center text-primary">
+      <div class="icon-facebook-circled d-flex m-2 fs-2">
+        <div class="text-secondary fs-6 title">Facebook</div>
+      </div>
+      <div class="icon-linkedin-circled d-flex m-2 fs-2">
+        <div class="text-secondary fs-6 title">Linkedin</div>
+      </div>
+      <div class="icon-github-circled d-flex m-2 fs-2">
+        <div class="text-secondary fs-6 title">Github</div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

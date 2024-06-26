@@ -1,0 +1,28 @@
+.circle {
+  background-color: blueviolet;
+  border: 1px solid black;
+  height: auto;
+}
+
+.timeline {
+  border-bottom: 1px dotted blue;
+}
+.detail {
+  border-bottom: 1px dotted blue;
+}
+.item-col {
+  height: 56%;
+  max-width: 50%;
+}
+.item-1 {
+  height: 100%;
+}
+.item-2 {
+  max-width: 850px;
+}
+.item-3 {
+  max-width: 350px;
+}
+.item {
+  max-height: 37%;
+}

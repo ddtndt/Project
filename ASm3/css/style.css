@@ -1,0 +1,50 @@
+@media screen and (max-width: 1200px) {
+}
+
+* {
+  box-sizing: border-box;
+}
+.navbar a {
+  text-decoration: none;
+  max-width: 100%;
+}
+.underline {
+  background-color: grey;
+  display: inline-block;
+  height: 0.2rem;
+  width: 15%;
+  margin-right: 0.75rem;
+}
+.grid {
+  max-width: 400px;
+}
+.item {
+  border: 1px solid gray;
+}
+.hidden {
+  display: none;
+}
+/* more */
+
+.Link {
+  text-decoration: none;
+}
+.view-button {
+  display: none;
+}
+.job-item:hover .view-button {
+  display: block;
+}
+.job-point {
+  border-bottom: 3px solid;
+  display: inline-block;
+
+  margin-right: 10px;
+  width: 18%;
+}
+.circle {
+  border: 2px solid rgb(102, 211, 119);
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
